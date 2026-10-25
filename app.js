@@ -1,6 +1,24 @@
 "use strict";
-(() => {
-  const data = window.FLUXFORGE_DATA;
+(async () => {
+  let data = window.FLUXFORGE_DATA;
+  let loadWarning = "";
+  // Read only the public snapshot. A fresh URL avoids GitHub Pages/CDN and
+  // browser caches retaining yesterday's data.js after a successful publish.
+  if (window.location.protocol === "https:" || window.location.protocol === "http:") {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    try {
+      const response = await fetch("snapshot.json?checked=" + Date.now(), {cache:"no-store", signal:controller.signal});
+      if (!response.ok) throw new Error("snapshot unavailable");
+      const fresh = await response.json();
+      if (fresh.schema_version !== 1 || !Array.isArray(fresh.pull_requests)) throw new Error("invalid snapshot");
+      data = fresh;
+    } catch {
+      loadWarning = "网络刷新未成功，当前显示已归档快照；请核对更新时间。";
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
   const $ = id => document.getElementById(id);
   const node = (tag, cls, text) => {
     const el = document.createElement(tag);
@@ -50,6 +68,10 @@
   $("generated").textContent = date(data.generated_at);
   $("generated").dateTime = data.generated_at;
   $("stale").hidden = Date.now() - Date.parse(data.generated_at) <= 48 * 3600 * 1000;
+  if (loadWarning) {
+    $("stale").textContent = loadWarning;
+    $("stale").hidden = false;
+  }
   $("overall").replaceChildren(document.createTextNode(String(data.overall_progress)), node("small", "", "%"));
   $("gauge").style.setProperty("--amount", data.overall_progress + "%");
   $("gauge").setAttribute("role", "progressbar");
