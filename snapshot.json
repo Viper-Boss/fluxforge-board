@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-25T17:06:40Z",
-  "main_sha": "02bfe85416f489fda0fef696497707aed8f80e79",
+  "generated_at": "2026-10-25T17:14:35Z",
+  "main_sha": "e240ad2a9d8370bb9ece0c00b29f903d9a1ce201",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；代码量为main中指定产品源码的非空行数（含注释）/预估规模。两者都不等于验收率或人员绩效。",
   "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
@@ -10,10 +10,10 @@
   "code_lines": 6919,
   "code_target": 16500,
   "code_progress": 42,
-  "review_documents": 54,
+  "review_documents": 55,
   "open_count": 2,
-  "merged_count": 34,
-  "last_submitted_at": "2026-10-25T17:04:00Z",
+  "merged_count": 35,
+  "last_submitted_at": "2026-10-25T17:12:41Z",
   "members": [
     {
       "login": "fungi1220",
@@ -212,13 +212,31 @@
       "progress": 35,
       "code_lines": null,
       "code_progress": null,
-      "last_submitted_at": "2026-10-25T17:04:00Z",
-      "last_updated_at": "2026-10-25T17:05:52Z",
-      "pr_count": 25,
+      "last_submitted_at": "2026-10-25T17:12:41Z",
+      "last_updated_at": "2026-10-25T17:14:22Z",
+      "pr_count": 26,
       "open_count": 0
     }
   ],
   "pull_requests": [
+    {
+      "number": 72,
+      "author": "Viper-Boss",
+      "title": "fix: 看板刷新公开快照，避免浏览器展示旧进度",
+      "created_at": "2026-10-25T17:12:41Z",
+      "updated_at": "2026-10-25T17:14:22Z",
+      "merged_at": "2026-10-25T17:14:21Z",
+      "closed_at": "2026-10-25T17:14:21Z",
+      "state": "merged",
+      "draft": false,
+      "head": "748cb4f5b209649d16906c49d6b6c9432cebe7c6",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/72",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
     {
       "number": 71,
       "author": "Viper-Boss",
