@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-25T16:47:24Z",
-  "main_sha": "e559c547ffdc11a2bad71249be8677d8a820d64f",
+  "generated_at": "2026-10-25T17:06:40Z",
+  "main_sha": "02bfe85416f489fda0fef696497707aed8f80e79",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；代码量为main中指定产品源码的非空行数（含注释）/预估规模。两者都不等于验收率或人员绩效。",
   "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
@@ -10,10 +10,10 @@
   "code_lines": 6919,
   "code_target": 16500,
   "code_progress": 42,
-  "review_documents": 53,
+  "review_documents": 54,
   "open_count": 2,
-  "merged_count": 33,
-  "last_submitted_at": "2026-10-25T16:08:04Z",
+  "merged_count": 34,
+  "last_submitted_at": "2026-10-25T17:04:00Z",
   "members": [
     {
       "login": "fungi1220",
@@ -150,7 +150,7 @@
       "code_lines": 4930,
       "code_progress": 58,
       "last_submitted_at": "2026-10-25T16:08:04Z",
-      "last_updated_at": "2026-10-25T16:08:04Z",
+      "last_updated_at": "2026-10-25T16:46:17Z",
       "pr_count": 10,
       "open_count": 1
     },
@@ -212,28 +212,46 @@
       "progress": 35,
       "code_lines": null,
       "code_progress": null,
-      "last_submitted_at": "2026-10-25T12:05:33Z",
-      "last_updated_at": "2026-10-25T12:05:50Z",
-      "pr_count": 24,
+      "last_submitted_at": "2026-10-25T17:04:00Z",
+      "last_updated_at": "2026-10-25T17:05:52Z",
+      "pr_count": 25,
       "open_count": 0
     }
   ],
   "pull_requests": [
     {
+      "number": 71,
+      "author": "Viper-Boss",
+      "title": "feat: 三人工作量、代码量与PR审核公开看板",
+      "created_at": "2026-10-25T17:04:00Z",
+      "updated_at": "2026-10-25T17:05:52Z",
+      "merged_at": "2026-10-25T17:05:51Z",
+      "closed_at": "2026-10-25T17:05:52Z",
+      "state": "merged",
+      "draft": false,
+      "head": "d0f1bbef0abdb4e8f905ccf41c497b4ab6759233",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/71",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
       "number": 70,
       "author": "yh1030",
-      "title": "feat(B02-W1): connect compiled dataset browsing to the typed bridge",
+      "title": "feat(B02-W1): connect verified Compiler dataset browsing to B05",
       "created_at": "2026-10-25T16:08:04Z",
-      "updated_at": "2026-10-25T16:08:04Z",
+      "updated_at": "2026-10-25T16:46:17Z",
       "merged_at": null,
       "closed_at": null,
       "state": "open",
-      "draft": true,
-      "head": "2b1cfae174fa040c0de2102f0d98a326bd0374b6",
+      "draft": false,
+      "head": "12233703dfadd1d873f025fa8b00d5ae0f28036b",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/70",
       "review": {
         "state": "pending",
-        "label": "待审核 · 草稿",
+        "label": "待审核",
         "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
       }
     },
@@ -842,9 +860,9 @@
       "head": "86103589502085db6aafe2a3a81083a458fb86fa",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/10",
       "review": {
-        "state": "record",
-        "label": "指挥记录已归档",
-        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
       }
     },
     {
@@ -878,9 +896,9 @@
       "head": "e6735631d78db324013c3e3ec2de96e7188d09e8",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/8",
       "review": {
-        "state": "record",
-        "label": "指挥记录已归档",
-        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
       }
     }
   ],
