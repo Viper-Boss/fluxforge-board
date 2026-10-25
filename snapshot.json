@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-25T17:14:35Z",
+  "generated_at": "2026-10-25T18:05:22Z",
   "main_sha": "e240ad2a9d8370bb9ece0c00b29f903d9a1ce201",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；代码量为main中指定产品源码的非空行数（含注释）/预估规模。两者都不等于验收率或人员绩效。",
