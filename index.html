@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="FluxForge 磁铸：三人协作、任务进度、代码规模与 PR 审核的公开摘要看板。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>FluxForge · 三人协作看板</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#recent">跳到最近交付</a>
+  <div class="glow" aria-hidden="true"></div>
+  <header class="shell topbar">
+    <a class="brand" href="#overview" aria-label="FluxForge 看板首页"><span class="brand-mark">F<span>↗</span></span><span>FluxForge<small>磁铸 · RESEARCH SOFTWARE</small></span></a>
+    <nav aria-label="主导航"><a href="#overview">总览</a><a href="#team">三人分工</a><a href="#recent">最近交付</a><a href="#method">统计口径</a></nav>
+    <a class="repo-link" href="https://github.com/Viper-Boss/fluxforge-mfl" target="_blank" rel="noopener noreferrer">源码仓库 <span>↗</span></a>
+  </header>
+  <main class="shell">
+    <section class="hero" id="overview" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow"><i></i> THREE PEOPLE. ONE WORKBENCH.<span>主线开发中</span></div>
+        <h1 id="hero-title">从科研原型，<br>走向<span>可交付的软件。</span></h1>
+        <p class="intro">每个人负责什么，做到了哪一步，交付有没有通过。<br>用任务、代码和审核记录，看清 FluxForge 的下一步。</p>
+        <div class="hero-actions"><a class="primary" href="#team">查看三人进度 <span>↗</span></a><a class="secondary" href="#recent">最近 10 条交付 <span>↓</span></a></div>
+        <div class="snapshot">快照更新于 <time id="generated">读取中…</time><button id="refresh" type="button">刷新快照 ↻</button></div>
+        <p class="stale" id="stale" hidden>快照已超过 48 小时，请由维护者同步最新 GitHub 数据。</p>
+      </div>
+      <div class="mission" aria-label="总体工作量粗估">
+        <div class="orbit" aria-hidden="true"></div>
+        <div class="gauge" id="gauge"><div class="gauge-inner"><span>总体工作量 · 粗估</span><strong id="overall">—<small>%</small></strong><p>完整软件验收尚未完成</p></div></div>
+        <span class="orbit-tag left">Rust · egui</span><span class="orbit-tag right">Compiler · Runtime</span>
+        <span class="mission-caption">ESTIMATE ≠ ACCEPTANCE</span>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="项目指标">
+      <article class="metric"><span>主线产品代码</span><div><strong id="code-total">—</strong><small>非空行</small></div><p id="code-estimate">预估规模读取中</p><div class="track" id="total-code-track" role="progressbar" aria-label="主线代码量估算进度" aria-valuemin="0" aria-valuemax="100"><i></i></div></article>
+      <article class="metric lavender"><span>待处理的 PR</span><div><strong id="open-total">—</strong><small>条交付</small></div><p>含待审核、待修复和待视觉确认</p><a href="#recent">查看审核队列 <b>↗</b></a></article>
+      <article class="metric"><span>已合并的主线 PR</span><div><strong id="merged-total">—</strong><small>条记录</small></div><p>包括指挥文档，不能当成功能完成数</p><div class="dots" aria-hidden="true">······················</div></article>
+      <article class="metric gold"><span>最近一次 PR 提交</span><div><strong class="date-number" id="last-day">—</strong></div><p id="last-time">以 GitHub PR 创建时间为准</p><a href="#recent">谁交付了什么 <b>↗</b></a></article>
+    </section>
+
+    <section id="team" class="section" aria-labelledby="team-title">
+      <div class="section-head"><div><div class="eyebrow">TEAM & WORKLOAD</div><h2 id="team-title">三个人，三条清楚的责任线。</h2><p>工作量是任务完成粗估；代码量是当前规模 / 预计规模。两种进度分别看。</p></div><span class="tag">3 名成员 · 主线协作</span></div>
+      <div class="team-grid" id="members"></div>
+      <div class="note-line"><span>↳</span><p>不拿代码行数比较个人贡献。Viper-Boss 主要承担指挥与审核，因此不设置业务代码配额；老师原件、数据、日志及 GLM 平行代码均不计入产品代码量。</p></div>
+    </section>
+
+    <section id="recent" class="section" aria-labelledby="recent-title">
+      <div class="section-head"><div><div class="eyebrow">DELIVERIES & REVIEWS</div><h2 id="recent-title">最近交付，和每一次审核。</h2><p>按 PR 创建时间从新到旧排列，默认 10 条。审核意见绑定代码版本。</p></div><span class="tag" id="shown-count">最近 10 条</span></div>
+      <div class="filters">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索功能、PR 编号或成员" aria-label="搜索 PR"></label>
+        <label><span class="sr-only">按成员筛选</span><select id="member-filter"><option value="all">全部成员</option><option>fungi1220</option><option>yh1030</option><option>Viper-Boss</option></select></label>
+        <label><span class="sr-only">按审核状态筛选</span><select id="review-filter"><option value="all">全部审核状态</option><option value="pending">待审核 / 待复审</option><option value="changes_requested">需修改 / 补证据</option><option value="accepted">通过 / 阶段接收</option><option value="record">指挥记录</option></select></label>
+        <button class="text-button" id="reset" type="button">重置</button>
+      </div>
+      <div class="table-wrap"><table><caption class="sr-only">主线 PR 交付和指挥审核列表</caption><thead><tr><th scope="col">PR 提交时间 <span>北京时间</span></th><th scope="col">成员</th><th scope="col">提交的功能 / 工作</th><th scope="col">PR 状态</th><th scope="col">指挥审核</th><th scope="col">意见</th></tr></thead><tbody id="rows"></tbody></table><p class="empty" id="empty" hidden>没有匹配的交付。试试更换筛选条件。</p></div>
+      <div class="list-footer"><span id="list-summary" aria-live="polite"></span><button class="secondary" id="more" type="button">再显示 10 条 ↓</button></div>
+    </section>
+
+    <section id="method" class="method section" aria-labelledby="method-title">
+      <div><div class="eyebrow">HOW TO READ THIS BOARD</div><h2 id="method-title">数字有口径，结论有出处。</h2><p>这是协作快照，不是自动验收系统。</p></div>
+      <div class="method-grid">
+        <article><span>01 / 工作量</span><h3>任务权重 × 阶段进度</h3><p>每人的任务权重合计 100%，取整到 5%。三人预计工作量分配为 45% / 45% / 10%。粗估可以修订，不能冒充实际工时或验收率。</p></article>
+        <article><span>02 / 代码量</span><h3>只数主线产品源码</h3><p>统计指定 Rust 与 MATLAB 适配源码的非空行，含注释。排除老师原始程序、模型、测试证据、文档和生成数据；预估目标可调整，代码多不等于功能正确。</p></article>
+        <article><span>03 / 提交时间</span><h3>GitHub PR 为事实来源</h3><p>列表及成员“最近提交”均使用 PR 的 created_at，不使用本地文件时间。弹窗另列 updated_at 与合并时间，防止把更新当成新交付。</p></article>
+        <article><span>04 / 审核意见</span><h3>通过有范围，也有版本</h3><p>意见由指挥审核记录登记。HEAD 更新则自动转为待复审；CI 绿色、开发者自测和已合并都不自动代表完整验收。新界面仍须本人明确认可。</p></article>
+      </div>
+      <div class="method-bottom"><p id="privacy">公开摘要，源码保持私有。</p><p>估算基准：<time id="estimate-date">—</time> · 主线 <code id="main-sha">—</code></p></div>
+    </section>
+  </main>
+  <footer class="shell footer"><span class="footer-brand">FluxForge <small>磁铸</small></span><p>Rust 原生科研工作台 → MATLAB Compiler worker → 匹配 Runtime</p><a href="#overview">返回顶部 ↑</a></footer>
+  <dialog id="review-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">REVIEW RECORD</span><button id="close-dialog" class="icon-button" type="button" aria-label="关闭审核意见">×</button></div><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+  <noscript><div class="shell notice">请启用 JavaScript 以查看成员进度和 PR 数据。原始记录可在 GitHub 仓库查看。</div></noscript>
+</body>
+</html>

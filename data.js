@@ -1,0 +1,890 @@
+window.FLUXFORGE_DATA = {
+  "schema_version": 1,
+  "repository": "Viper-Boss/fluxforge-mfl",
+  "generated_at": "2026-10-25T16:47:24Z",
+  "main_sha": "e559c547ffdc11a2bad71249be8677d8a820d64f",
+  "estimate_date": "2026-10-26",
+  "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；代码量为main中指定产品源码的非空行数（含注释）/预估规模。两者都不等于验收率或人员绩效。",
+  "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
+  "overall_progress": 40,
+  "code_lines": 6919,
+  "code_target": 16500,
+  "code_progress": 42,
+  "review_documents": 53,
+  "open_count": 2,
+  "merged_count": 33,
+  "last_submitted_at": "2026-10-25T16:08:04Z",
+  "members": [
+    {
+      "login": "fungi1220",
+      "name": "fungi1220",
+      "role": "前端与科研交互",
+      "initials": "F",
+      "color": "mint",
+      "allocation": 45,
+      "responsibilities": "Rust 原生界面、波形与热图、ROI 圈选、项目标注、结果与导出",
+      "next": "F02-R1：先接实际数组缓存与 ROI；完成 I00 接口反馈。",
+      "code_target": 8000,
+      "tasks": [
+        {
+          "id": "F01",
+          "title": "SCI 全页原型与交互收尾",
+          "weight": 30,
+          "progress": 80,
+          "note": "原型阶段接收；新键盘修复和系统 DPI 仍待验收。",
+          "issue": 12
+        },
+        {
+          "id": "F02-R1",
+          "title": "缓存驱动波形、热图与 ROI",
+          "weight": 20,
+          "progress": 0,
+          "note": "已下达，尚无可计入的业务交付。",
+          "issue": 13
+        },
+        {
+          "id": "F02-R2",
+          "title": "真实 MAT 导入与诊断",
+          "weight": 10,
+          "progress": 0,
+          "issue": 13
+        },
+        {
+          "id": "F03",
+          "title": "项目、标注与恢复",
+          "weight": 15,
+          "progress": 0,
+          "issue": 14
+        },
+        {
+          "id": "F04",
+          "title": "任务接线与真实结果图",
+          "weight": 10,
+          "progress": 0,
+          "issue": 15
+        },
+        {
+          "id": "F05",
+          "title": "导出与完整体验",
+          "weight": 10,
+          "progress": 0,
+          "issue": 16
+        },
+        {
+          "id": "F06",
+          "title": "获批扩展功能",
+          "weight": 5,
+          "progress": 0,
+          "issue": 17
+        }
+      ],
+      "progress": 25,
+      "code_lines": 1989,
+      "code_progress": 25,
+      "last_submitted_at": "2026-10-25T07:52:21Z",
+      "last_updated_at": "2026-10-25T14:26:12Z",
+      "pr_count": 2,
+      "open_count": 1
+    },
+    {
+      "login": "yh1030",
+      "name": "yh1030",
+      "role": "计算核心与进程桥",
+      "initials": "Y",
+      "color": "lavender",
+      "allocation": 45,
+      "responsibilities": "MATLAB 核查、无界面计算、共享协议、Compiler worker、Rust 桥接",
+      "next": "B02-W1：Compiler 数据浏览入口与 typed 桥；与 fungi 完成 I00 交接。",
+      "code_target": 8500,
+      "tasks": [
+        {
+          "id": "B01",
+          "title": "老师源码与模型核查",
+          "weight": 15,
+          "progress": 65,
+          "note": "工具和技术证据已接收，完整 golden 与物理基准待确认。",
+          "issue": 18
+        },
+        {
+          "id": "B02",
+          "title": "数据契约与实际浏览接线",
+          "weight": 20,
+          "progress": 65,
+          "note": "候选缓存/协议已接收，PR70 Compiler 接线待审，不计作已通过。",
+          "issue": 19
+        },
+        {
+          "id": "B03",
+          "title": "无界面核心与数值正确性",
+          "weight": 25,
+          "progress": 60,
+          "note": "技术核心阶段接收，正式分析接口与物理有效性未完成。",
+          "issue": 20
+        },
+        {
+          "id": "B04",
+          "title": "Compiler 与目标部署",
+          "weight": 15,
+          "progress": 60,
+          "note": "已有技术 worker；仅 Runtime 干净目标机验收仍待。",
+          "issue": 21
+        },
+        {
+          "id": "B05",
+          "title": "进程桥、故障恢复与交接",
+          "weight": 20,
+          "progress": 60,
+          "note": "桥与回传工具阶段接收；实际 UI 接线及目标场景仍待。",
+          "issue": 22
+        },
+        {
+          "id": "B06",
+          "title": "扩展预检与获批扩展",
+          "weight": 5,
+          "progress": 20,
+          "note": "仅预检交付，不等于扩展业务已实现。",
+          "issue": 23
+        }
+      ],
+      "progress": 60,
+      "code_lines": 4930,
+      "code_progress": 58,
+      "last_submitted_at": "2026-10-25T16:08:04Z",
+      "last_updated_at": "2026-10-25T16:08:04Z",
+      "pr_count": 10,
+      "open_count": 1
+    },
+    {
+      "login": "Viper-Boss",
+      "name": "Viper-Boss",
+      "role": "总指挥与验收",
+      "initials": "V",
+      "color": "gold",
+      "allocation": 10,
+      "responsibilities": "任务拆解、方向制定、代码与视觉验收、老师沟通、授权和最终打包",
+      "next": "持续审核两人交付；裁决物理与协议关键项，组织最终用户验收。",
+      "code_target": null,
+      "tasks": [
+        {
+          "id": "V01-A",
+          "title": "技术路线、分工与任务书",
+          "weight": 20,
+          "progress": 100,
+          "issue": 24
+        },
+        {
+          "id": "V01-R",
+          "title": "持续审核与阶段接收",
+          "weight": 20,
+          "progress": 75,
+          "note": "已接收多批交付；最终整体审核仍持续。",
+          "issue": 24
+        },
+        {
+          "id": "V01-P",
+          "title": "老师确认与物理基准裁决",
+          "weight": 20,
+          "progress": 0,
+          "issue": 24
+        },
+        {
+          "id": "V01-L",
+          "title": "最终构建授权与环境确认",
+          "weight": 10,
+          "progress": 0,
+          "issue": 24
+        },
+        {
+          "id": "V02-P",
+          "title": "最终打包与安装验收",
+          "weight": 20,
+          "progress": 0,
+          "issue": 25
+        },
+        {
+          "id": "V02-A",
+          "title": "完整用户验收与发布决定",
+          "weight": 10,
+          "progress": 0,
+          "issue": 25
+        }
+      ],
+      "progress": 35,
+      "code_lines": null,
+      "code_progress": null,
+      "last_submitted_at": "2026-10-25T12:05:33Z",
+      "last_updated_at": "2026-10-25T12:05:50Z",
+      "pr_count": 24,
+      "open_count": 0
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 70,
+      "author": "yh1030",
+      "title": "feat(B02-W1): connect compiled dataset browsing to the typed bridge",
+      "created_at": "2026-10-25T16:08:04Z",
+      "updated_at": "2026-10-25T16:08:04Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": true,
+      "head": "2b1cfae174fa040c0de2102f0d98a326bd0374b6",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/70",
+      "review": {
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 69,
+      "author": "Viper-Boss",
+      "title": "docs: PR68键盘修复审查与证据补交要求",
+      "created_at": "2026-10-25T12:05:33Z",
+      "updated_at": "2026-10-25T12:05:50Z",
+      "merged_at": "2026-10-25T12:05:50Z",
+      "closed_at": "2026-10-25T12:05:50Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5d66979413d2cc39e3f0cab478d139a8f59fb2e8",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/69",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 68,
+      "author": "fungi1220",
+      "title": "F01 后续：键盘导航、禁用说明与任务焦点修复",
+      "created_at": "2026-10-25T07:52:21Z",
+      "updated_at": "2026-10-25T14:26:12Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "91d41f745762058aabcef386b1031c90e010207e",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/68",
+      "review": {
+        "state": "changes_requested",
+        "label": "需修改 / 补证据",
+        "scope": "F01 键盘导航、禁用原因及任务焦点修复",
+        "summary": "已检查源码与本地报告。新版本原生截图尚未交付；不同状态截图登记相同哈希，需核查并勘误；原因菜单关闭后的焦点归属需补验。保留界面本人确认门槛，暂不合并。",
+        "report": "docs/development/reviews/2026-10-25_V01_PR68_keyboard-review.md",
+        "comment": "https://github.com/Viper-Boss/fluxforge-mfl/pull/68#issuecomment-6397416982",
+        "reviewed_date": "2026-10-25"
+      }
+    },
+    {
+      "number": 67,
+      "author": "Viper-Boss",
+      "title": "docs: PR52回传工具审核通过及剩余事项",
+      "created_at": "2026-10-25T07:33:49Z",
+      "updated_at": "2026-10-25T07:34:08Z",
+      "merged_at": "2026-10-25T07:34:07Z",
+      "closed_at": "2026-10-25T07:34:08Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5a981eb7e3358c7d74cd0c61135235dee2770189",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/67",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 66,
+      "author": "Viper-Boss",
+      "title": "docs: 核对GLM参考与主线代码隔离",
+      "created_at": "2026-10-25T07:19:49Z",
+      "updated_at": "2026-10-25T07:20:04Z",
+      "merged_at": "2026-10-25T07:20:03Z",
+      "closed_at": "2026-10-25T07:20:03Z",
+      "state": "merged",
+      "draft": false,
+      "head": "ea8a00449db0f90612ca7fcfca9d98de72392714",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/66",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 65,
+      "author": "Viper-Boss",
+      "title": "docs: GLM源码检查与两位成员剩余开发执行令",
+      "created_at": "2026-10-25T07:03:38Z",
+      "updated_at": "2026-10-25T07:04:23Z",
+      "merged_at": "2026-10-25T07:04:23Z",
+      "closed_at": "2026-10-25T07:04:23Z",
+      "state": "merged",
+      "draft": false,
+      "head": "0a6780265e92170a72960ac941da3cbd4e6536db",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/65",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 52,
+      "author": "yh1030",
+      "title": "feat(B05): add verified timing return archives without Runtime caches",
+      "created_at": "2026-10-24T17:18:58Z",
+      "updated_at": "2026-10-25T07:30:50Z",
+      "merged_at": "2026-10-25T07:30:50Z",
+      "closed_at": "2026-10-25T07:30:50Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5120a597848cd8dc09f5350069d7943348461093",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/52",
+      "review": {
+        "state": "accepted",
+        "label": "通过 · 工具范围",
+        "scope": "B05 测试证据回传工具",
+        "summary": "源码与开发者本地验证证据对应，已合并。仅接收归档工具；不代表完整 B05、Runtime-only、数值物理或最终安装验收通过。",
+        "report": "docs/development/reviews/2026-10-25_V01_PR52_timing-return-acceptance.md",
+        "reviewed_date": "2026-10-25"
+      }
+    },
+    {
+      "number": 51,
+      "author": "Viper-Boss",
+      "title": "docs: 记录PR48/49本人阶段接收及后续任务",
+      "created_at": "2026-10-24T16:52:20Z",
+      "updated_at": "2026-10-24T16:52:47Z",
+      "merged_at": "2026-10-24T16:52:46Z",
+      "closed_at": "2026-10-24T16:52:46Z",
+      "state": "merged",
+      "draft": false,
+      "head": "104b0e9b037d493c84af0fa50ec88c5215d44069",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/51",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 49,
+      "author": "yh1030",
+      "title": "test(B05): validate MSVC build and deliver version-bound timing handoff",
+      "created_at": "2026-10-23T01:01:35Z",
+      "updated_at": "2026-10-24T16:50:07Z",
+      "merged_at": "2026-10-24T16:50:07Z",
+      "closed_at": "2026-10-24T16:50:07Z",
+      "state": "merged",
+      "draft": false,
+      "head": "dab8ff6b6a184ac1822933ee6112d08e19e5ccc0",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/49",
+      "review": {
+        "state": "stage_accepted",
+        "label": "阶段接收",
+        "scope": "B05 本地 MSVC 验证和计时交接",
+        "summary": "本人允许本批暂时合并，保留未完成项。目标环境、真实接线及完整任务仍须后续验收。",
+        "report": "docs/development/reviews/2026-10-25_V01_PR48_PR49_acceptance.md",
+        "reviewed_date": "2026-10-25"
+      }
+    },
+    {
+      "number": 48,
+      "author": "yh1030",
+      "title": "fix(B04): reject truncated PATH discovery and bind fresh local evidence",
+      "created_at": "2026-10-23T00:31:54Z",
+      "updated_at": "2026-10-24T16:49:56Z",
+      "merged_at": "2026-10-24T16:49:56Z",
+      "closed_at": "2026-10-24T16:49:56Z",
+      "state": "merged",
+      "draft": false,
+      "head": "cba32d263fcd19d870aebe48b058ae620e0d49c3",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/48",
+      "review": {
+        "state": "stage_accepted",
+        "label": "阶段接收",
+        "scope": "B04 Runtime 路径绑定修复",
+        "summary": "本人允许本批暂时合并。仅确认本批接收范围，目标机安装与完整部署仍需验收。",
+        "report": "docs/development/reviews/2026-10-25_V01_PR48_PR49_acceptance.md",
+        "reviewed_date": "2026-10-25"
+      }
+    },
+    {
+      "number": 47,
+      "author": "Viper-Boss",
+      "title": "docs: 记录五项PR本人阶段接收与后续任务",
+      "created_at": "2026-10-22T17:49:07Z",
+      "updated_at": "2026-10-22T17:49:35Z",
+      "merged_at": "2026-10-22T17:49:35Z",
+      "closed_at": "2026-10-22T17:49:35Z",
+      "state": "merged",
+      "draft": false,
+      "head": "f0d922e24c8482d46bfe5623391c63176aeedfd1",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/47",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 46,
+      "author": "Viper-Boss",
+      "title": "docs: 开发者本地验证、报告验收与指挥分工",
+      "created_at": "2026-10-22T17:38:07Z",
+      "updated_at": "2026-10-22T17:38:40Z",
+      "merged_at": "2026-10-22T17:38:40Z",
+      "closed_at": "2026-10-22T17:38:40Z",
+      "state": "merged",
+      "draft": false,
+      "head": "a44f510b84399150d31869e78bd58fa2c53560e9",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/46",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 45,
+      "author": "Viper-Boss",
+      "title": "docs: 恢复审核并复核PR31/36/38，登记部署PATH边界问题",
+      "created_at": "2026-10-22T17:28:18Z",
+      "updated_at": "2026-10-22T17:28:55Z",
+      "merged_at": "2026-10-22T17:28:54Z",
+      "closed_at": "2026-10-22T17:28:54Z",
+      "state": "merged",
+      "draft": false,
+      "head": "dad8a12b7471b97365241336395dcc001d02aa43",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/45",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 44,
+      "author": "Viper-Boss",
+      "title": "docs: 今日手动复审B05三批采集与180数组原始证据",
+      "created_at": "2026-10-20T09:50:58Z",
+      "updated_at": "2026-10-20T09:51:44Z",
+      "merged_at": "2026-10-20T09:51:44Z",
+      "closed_at": "2026-10-20T09:51:44Z",
+      "state": "merged",
+      "draft": false,
+      "head": "d737c479d5123bfd6344b651a801fe5fdb444d83",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/44",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 43,
+      "author": "Viper-Boss",
+      "title": "docs: 每日复审B05真实调用与B06诊断，记录Actions平台阻塞",
+      "created_at": "2026-10-19T12:11:03Z",
+      "updated_at": "2026-10-19T12:11:46Z",
+      "merged_at": "2026-10-19T12:11:45Z",
+      "closed_at": "2026-10-19T12:11:45Z",
+      "state": "merged",
+      "draft": false,
+      "head": "83f70102c5cbf16d82257812e8881f2457218e8b",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/43",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 42,
+      "author": "yh1030",
+      "title": "[B06][Draft] 扩展清点与只读模型、历史诊断（首个子交付）",
+      "created_at": "2026-10-19T06:42:14Z",
+      "updated_at": "2026-10-22T17:45:06Z",
+      "merged_at": "2026-10-22T17:45:06Z",
+      "closed_at": "2026-10-22T17:45:06Z",
+      "state": "merged",
+      "draft": false,
+      "head": "d2534d8211920d974828e2c69a98713aea827365",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/42",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 41,
+      "author": "Viper-Boss",
+      "title": "docs: 复审B05原子归属与typed桥，列真实Compiler待验项",
+      "created_at": "2026-10-19T01:12:18Z",
+      "updated_at": "2026-10-19T01:12:52Z",
+      "merged_at": "2026-10-19T01:12:52Z",
+      "closed_at": "2026-10-19T01:12:52Z",
+      "state": "merged",
+      "draft": false,
+      "head": "ac05fc2bfeed239b9e4ca1e42f109c4eb96a7540",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/41",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 40,
+      "author": "Viper-Boss",
+      "title": "docs: 客机11项测试与独立数值复核、Runtime路径待修",
+      "created_at": "2026-10-18T16:52:13Z",
+      "updated_at": "2026-10-19T01:03:35Z",
+      "merged_at": "2026-10-19T01:03:35Z",
+      "closed_at": "2026-10-19T01:03:35Z",
+      "state": "merged",
+      "draft": false,
+      "head": "b3e4c85adcbf65dfe671e02e28eac2ef775fad5c",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/40",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 39,
+      "author": "Viper-Boss",
+      "title": "docs: 晚间四项复审与新确认框视觉认可记录",
+      "created_at": "2026-10-18T14:37:34Z",
+      "updated_at": "2026-10-18T14:38:24Z",
+      "merged_at": "2026-10-18T14:38:23Z",
+      "closed_at": "2026-10-18T14:38:23Z",
+      "state": "merged",
+      "draft": false,
+      "head": "7dd5fb87f4653f8daa7c3fcb976961fb3c533d56",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/39",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 38,
+      "author": "yh1030",
+      "title": "feat(B04): Compiler构建、Runtime启动与环境证据回传",
+      "created_at": "2026-10-18T14:14:21Z",
+      "updated_at": "2026-10-22T17:44:41Z",
+      "merged_at": "2026-10-22T17:44:41Z",
+      "closed_at": "2026-10-22T17:44:41Z",
+      "state": "merged",
+      "draft": false,
+      "head": "7bc75847ea45c084b9d5e617e4f4eeeaae2b1d40",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/38",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 37,
+      "author": "Viper-Boss",
+      "title": "docs: B02阶段合并与F01/B03/B05持续复审",
+      "created_at": "2026-10-18T03:40:03Z",
+      "updated_at": "2026-10-18T03:40:28Z",
+      "merged_at": "2026-10-18T03:40:28Z",
+      "closed_at": "2026-10-18T03:40:28Z",
+      "state": "merged",
+      "draft": false,
+      "head": "29bb538981241f045ab01db816a092aa7b609ee8",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/37",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 36,
+      "author": "yh1030",
+      "title": "[B05][Draft] Rust进程桥、Runtime子环境与首启分阶段诊断",
+      "created_at": "2026-10-17T16:53:01Z",
+      "updated_at": "2026-10-22T17:44:54Z",
+      "merged_at": "2026-10-22T17:44:54Z",
+      "closed_at": "2026-10-22T17:44:54Z",
+      "state": "merged",
+      "draft": false,
+      "head": "24c1553a981f16b420654762f5ab7f923bfa46eb",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/36",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 35,
+      "author": "Viper-Boss",
+      "title": "docs: 每日复核B02交付及B03无界面核心草稿",
+      "created_at": "2026-10-16T12:13:56Z",
+      "updated_at": "2026-10-16T12:14:26Z",
+      "merged_at": "2026-10-16T12:14:26Z",
+      "closed_at": "2026-10-16T12:14:26Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5eb3e4348471e307e1bc0423120d88ec352b996d",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/35",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 34,
+      "author": "yh1030",
+      "title": "[B03][Draft] 无界面 MATLAB 数值核心与原函数一致性证据（技术子集）",
+      "created_at": "2026-10-15T13:07:22Z",
+      "updated_at": "2026-10-22T17:44:28Z",
+      "merged_at": "2026-10-22T17:44:28Z",
+      "closed_at": "2026-10-22T17:44:28Z",
+      "state": "merged",
+      "draft": false,
+      "head": "9d4c72a60556afb47a2e0b4a867be6471f08a016",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/34",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 33,
+      "author": "Viper-Boss",
+      "title": "docs: B02类型修正独立复审与剩余交付门槛",
+      "created_at": "2026-10-15T12:06:57Z",
+      "updated_at": "2026-10-15T12:07:24Z",
+      "merged_at": "2026-10-15T12:07:24Z",
+      "closed_at": "2026-10-15T12:07:24Z",
+      "state": "merged",
+      "draft": false,
+      "head": "1db91c86d2ea12a59bc673cd68190d022a9431e3",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/33",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 32,
+      "author": "Viper-Boss",
+      "title": "docs: F01原型认可与B02独立复审记录",
+      "created_at": "2026-10-15T11:19:44Z",
+      "updated_at": "2026-10-15T11:20:17Z",
+      "merged_at": "2026-10-15T11:20:16Z",
+      "closed_at": "2026-10-15T11:20:16Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5ce3068508774905ec58a8f476c44b64be534bde",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/32",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 31,
+      "author": "fungi1220",
+      "title": "F01: C 风格科研工作台、确认框与可取消任务演示",
+      "created_at": "2026-10-15T05:44:34Z",
+      "updated_at": "2026-10-22T17:45:20Z",
+      "merged_at": "2026-10-22T17:45:19Z",
+      "closed_at": "2026-10-22T17:45:19Z",
+      "state": "merged",
+      "draft": false,
+      "head": "64432518c3c33aefde26621babe751f07baabf47",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/31",
+      "review": {
+        "state": "stage_accepted",
+        "label": "阶段接收 · 原型",
+        "scope": "SCI 原型、确认框和模拟任务设计",
+        "summary": "对应原型已获本人认可并阶段合并。真实导入、保存、计算、导出和完整 DPI 等仍待；不覆盖新的界面改动。",
+        "report": "docs/development/reviews/2026-10-23_V01_batch-stage-acceptance.md",
+        "reviewed_date": "2026-10-23"
+      }
+    },
+    {
+      "number": 30,
+      "author": "Viper-Boss",
+      "title": "docs: B02独立审核退回记录与每日授权更新",
+      "created_at": "2026-10-14T13:17:02Z",
+      "updated_at": "2026-10-14T13:18:26Z",
+      "merged_at": "2026-10-14T13:18:26Z",
+      "closed_at": "2026-10-14T13:18:26Z",
+      "state": "merged",
+      "draft": false,
+      "head": "b3d4c9b06d2d0346ebcb7797680197de0f14ef77",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/30",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 29,
+      "author": "yh1030",
+      "title": "[B02] 新增 Rust—MATLAB 浏览契约与原始数据缓存（候选）",
+      "created_at": "2026-10-14T12:51:52Z",
+      "updated_at": "2026-10-18T03:35:13Z",
+      "merged_at": "2026-10-18T03:35:13Z",
+      "closed_at": "2026-10-18T03:35:13Z",
+      "state": "merged",
+      "draft": false,
+      "head": "4100cf3426bbfff4ebe5bd50d5bad2103ce3758e",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/29",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 28,
+      "author": "Viper-Boss",
+      "title": "docs: 每日审核规范与界面本人确认门槛",
+      "created_at": "2026-10-14T12:47:39Z",
+      "updated_at": "2026-10-14T12:48:33Z",
+      "merged_at": "2026-10-14T12:48:33Z",
+      "closed_at": "2026-10-14T12:48:33Z",
+      "state": "merged",
+      "draft": false,
+      "head": "9362906ee7ec62bbad94347b9347167947a07184",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/28",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 27,
+      "author": "Viper-Boss",
+      "title": "docs: 记录PR26/PR10阶段验收与合并后的开发进度",
+      "created_at": "2026-10-14T12:34:25Z",
+      "updated_at": "2026-10-14T12:35:27Z",
+      "merged_at": "2026-10-14T12:35:27Z",
+      "closed_at": "2026-10-14T12:35:27Z",
+      "state": "merged",
+      "draft": false,
+      "head": "16d21d27593e78044a44c743aa3e1294135abdfe",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/27",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 26,
+      "author": "yh1030",
+      "title": "B01: 全量 MATLAB 审核工具、模型恢复与可复现证据",
+      "created_at": "2026-10-14T09:26:39Z",
+      "updated_at": "2026-10-14T12:24:20Z",
+      "merged_at": "2026-10-14T12:24:19Z",
+      "closed_at": "2026-10-14T12:24:20Z",
+      "state": "merged",
+      "draft": false,
+      "head": "63c859e4c259688c7f5adf7b0fcf08894845b58e",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/26",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 11,
+      "author": "Viper-Boss",
+      "title": "docs: establish complete SCI workbench development command center",
+      "created_at": "2026-10-13T16:23:33Z",
+      "updated_at": "2026-10-24T16:38:27Z",
+      "merged_at": "2026-10-13T16:30:56Z",
+      "closed_at": "2026-10-13T16:30:56Z",
+      "state": "merged",
+      "draft": false,
+      "head": "cef47510d998fc993cf769c11c51fdc02925fb38",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/11",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 10,
+      "author": "Viper-Boss",
+      "title": "现代科研工作台交互预览（合成数据，待验收）",
+      "created_at": "2026-10-13T15:23:29Z",
+      "updated_at": "2026-10-14T12:24:31Z",
+      "merged_at": "2026-10-14T12:24:31Z",
+      "closed_at": "2026-10-14T12:24:31Z",
+      "state": "merged",
+      "draft": false,
+      "head": "86103589502085db6aafe2a3a81083a458fb86fa",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/10",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 9,
+      "author": "Viper-Boss",
+      "title": "docs: add handoff for local Codex development",
+      "created_at": "2026-10-13T14:33:17Z",
+      "updated_at": "2026-10-24T16:36:58Z",
+      "merged_at": null,
+      "closed_at": "2026-10-13T16:35:08Z",
+      "state": "closed",
+      "draft": false,
+      "head": "4cc79848bfc9e23a7b091dc423c439e4f166b969",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/9",
+      "review": {
+        "state": "closed",
+        "label": "已关闭 · 未合并",
+        "summary": "PR 已关闭且未合并。关闭状态本身不能用于推断具体审核结论。"
+      }
+    },
+    {
+      "number": 8,
+      "author": "Viper-Boss",
+      "title": "迁移至 Rust 原生桌面程序，清理 C# 与 WPF 工程",
+      "created_at": "2026-10-12T13:58:53Z",
+      "updated_at": "2026-10-12T14:14:42Z",
+      "merged_at": "2026-10-12T14:14:42Z",
+      "closed_at": "2026-10-12T14:14:42Z",
+      "state": "merged",
+      "draft": false,
+      "head": "e6735631d78db324013c3e3ec2de96e7188d09e8",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/8",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    }
+  ],
+  "privacy": "仅公开协作摘要；原始 PR/报告链接需要主仓库访问权限。没有代码、日志、原始数据或凭据。",
+  "acceptance": "整体仍未完成验收；阶段接收不等于算法物理正确或正式发布。"
+}
+;
