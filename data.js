@@ -1,7 +1,7 @@
 window.FLUXFORGE_DATA = {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-26T05:21:51Z",
+  "generated_at": "2026-10-26T12:01:58Z",
   "main_sha": "ded9c298ed846bbda62835cbb08783c0486de165",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；代码量为main中指定产品源码的非空行数（含注释）/预估规模。两者都不等于验收率或人员绩效。",
@@ -11,9 +11,9 @@ window.FLUXFORGE_DATA = {
   "code_target": 16500,
   "code_progress": 44,
   "review_documents": 57,
-  "open_count": 0,
+  "open_count": 4,
   "merged_count": 38,
-  "last_submitted_at": "2026-10-26T05:21:00Z",
+  "last_submitted_at": "2026-10-26T10:09:34Z",
   "members": [
     {
       "login": "fungi1220",
@@ -81,10 +81,10 @@ window.FLUXFORGE_DATA = {
       "progress": 25,
       "code_lines": 2149,
       "code_progress": 27,
-      "last_submitted_at": "2026-10-25T07:52:21Z",
-      "last_updated_at": "2026-10-26T05:17:46Z",
-      "pr_count": 2,
-      "open_count": 0
+      "last_submitted_at": "2026-10-26T06:30:39Z",
+      "last_updated_at": "2026-10-26T07:32:11Z",
+      "pr_count": 4,
+      "open_count": 2
     },
     {
       "login": "yh1030",
@@ -149,10 +149,10 @@ window.FLUXFORGE_DATA = {
       "progress": 60,
       "code_lines": 5057,
       "code_progress": 59,
-      "last_submitted_at": "2026-10-25T16:08:04Z",
-      "last_updated_at": "2026-10-26T05:17:55Z",
-      "pr_count": 10,
-      "open_count": 0
+      "last_submitted_at": "2026-10-26T10:09:34Z",
+      "last_updated_at": "2026-10-26T11:35:03Z",
+      "pr_count": 12,
+      "open_count": 2
     },
     {
       "login": "Viper-Boss",
@@ -220,6 +220,78 @@ window.FLUXFORGE_DATA = {
   ],
   "pull_requests": [
     {
+      "number": 77,
+      "author": "yh1030",
+      "title": "perf(B04): reduce strict catalog parsing and trace startup boundaries",
+      "created_at": "2026-10-26T10:09:34Z",
+      "updated_at": "2026-10-26T11:35:03Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "3022a08231a48fe7521467372733f738829fb58b",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/77",
+      "review": {
+        "state": "pending",
+        "label": "待审核",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 76,
+      "author": "fungi1220",
+      "title": "F02-R1：B02 缓存驱动波形、热图与可确认 ROI",
+      "created_at": "2026-10-26T06:30:39Z",
+      "updated_at": "2026-10-26T07:32:11Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": true,
+      "head": "31f5c6d03af2edf2c0b5319ec1e7456036b59f23",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/76",
+      "review": {
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 75,
+      "author": "yh1030",
+      "title": "test(B02-W1): verify merged main and retain cold startup timeout",
+      "created_at": "2026-10-26T05:47:18Z",
+      "updated_at": "2026-10-26T05:49:02Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "a605fd2fb2f4f76c6d81b28b69d237104a3d214d",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/75",
+      "review": {
+        "state": "pending",
+        "label": "待审核",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 74,
+      "author": "fungi1220",
+      "title": "F01：修复原因菜单抢焦点并补交原生截图证据",
+      "created_at": "2026-10-26T05:38:13Z",
+      "updated_at": "2026-10-26T05:45:02Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": true,
+      "head": "e3c35ded776fdb1fb7042b41903f0f9f75bb2513",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/74",
+      "review": {
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
       "number": 73,
       "author": "Viper-Boss",
       "title": "docs: PR68/70本人本批通过与看板状态同步",
@@ -278,7 +350,7 @@ window.FLUXFORGE_DATA = {
       "author": "yh1030",
       "title": "feat(B02-W1): connect verified Compiler dataset browsing to B05",
       "created_at": "2026-10-25T16:08:04Z",
-      "updated_at": "2026-10-26T05:17:55Z",
+      "updated_at": "2026-10-26T05:22:36Z",
       "merged_at": "2026-10-26T05:17:55Z",
       "closed_at": "2026-10-26T05:17:55Z",
       "state": "merged",
@@ -317,7 +389,7 @@ window.FLUXFORGE_DATA = {
       "author": "fungi1220",
       "title": "F01 后续：键盘导航、禁用说明与任务焦点修复",
       "created_at": "2026-10-25T07:52:21Z",
-      "updated_at": "2026-10-26T05:17:46Z",
+      "updated_at": "2026-10-26T05:22:31Z",
       "merged_at": "2026-10-26T05:17:45Z",
       "closed_at": "2026-10-26T05:17:45Z",
       "state": "merged",
