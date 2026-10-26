@@ -1,19 +1,19 @@
 window.FLUXFORGE_DATA = {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-26T12:01:58Z",
-  "main_sha": "ded9c298ed846bbda62835cbb08783c0486de165",
+  "generated_at": "2026-10-26T16:46:38Z",
+  "main_sha": "9923353851ab90bdd6cafe1a5a51f48cf67cae68",
   "estimate_date": "2026-10-26",
-  "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；代码量为main中指定产品源码的非空行数（含注释）/预估规模。两者都不等于验收率或人员绩效。",
+  "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；2026-10-26本批接收后F02-R1子项粗估70，其余子项不按合并数自动增加。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
   "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
-  "overall_progress": 40,
-  "code_lines": 7206,
+  "overall_progress": 50,
+  "code_lines": 7588,
   "code_target": 16500,
-  "code_progress": 44,
-  "review_documents": 57,
-  "open_count": 4,
-  "merged_count": 38,
-  "last_submitted_at": "2026-10-26T10:09:34Z",
+  "code_progress": 46,
+  "review_documents": 64,
+  "open_count": 0,
+  "merged_count": 45,
+  "last_submitted_at": "2026-10-26T16:45:48Z",
   "members": [
     {
       "login": "fungi1220",
@@ -23,7 +23,7 @@ window.FLUXFORGE_DATA = {
       "color": "mint",
       "allocation": 45,
       "responsibilities": "Rust 原生界面、波形与热图、ROI 圈选、项目标注、结果与导出",
-      "next": "F02-R1：先接实际数组缓存与 ROI；完成 I00 接口反馈。",
+      "next": "按现有I00接F02-R2真实MAT导入；DPI等缺项继续。",
       "code_target": 8000,
       "tasks": [
         {
@@ -31,15 +31,15 @@ window.FLUXFORGE_DATA = {
           "title": "SCI 全页原型与交互收尾",
           "weight": 30,
           "progress": 80,
-          "note": "原型与PR68键盘修复已本人本批接收；截图勘误、焦点补验和系统DPI缺项继续。",
+          "note": "原型/键盘及PR74菜单焦点修复已本人本批接收；真实系统DPI与完整交互缺项继续。",
           "issue": 12
         },
         {
           "id": "F02-R1",
           "title": "缓存驱动波形、热图与 ROI",
           "weight": 20,
-          "progress": 0,
-          "note": "已下达，尚无可计入的业务交付。",
+          "progress": 70,
+          "note": "PR76缓存fixture/波形/热图/ROI及取消恢复本批接收；系统DPI、最小窗口、性能和双方交接仍待。",
           "issue": 13
         },
         {
@@ -78,13 +78,13 @@ window.FLUXFORGE_DATA = {
           "issue": 17
         }
       ],
-      "progress": 25,
-      "code_lines": 2149,
-      "code_progress": 27,
+      "progress": 40,
+      "code_lines": 2515,
+      "code_progress": 31,
       "last_submitted_at": "2026-10-26T06:30:39Z",
-      "last_updated_at": "2026-10-26T07:32:11Z",
+      "last_updated_at": "2026-10-26T16:46:14Z",
       "pr_count": 4,
-      "open_count": 2
+      "open_count": 0
     },
     {
       "login": "yh1030",
@@ -94,7 +94,7 @@ window.FLUXFORGE_DATA = {
       "color": "lavender",
       "allocation": 45,
       "responsibilities": "MATLAB 核查、无界面计算、共享协议、Compiler worker、Rust 桥接",
-      "next": "B02-W1：Compiler 数据浏览入口与 typed 桥；与 fungi 完成 I00 交接。",
+      "next": "I00回应/组合验证已接收，支持F02-R2接线，准备B03-P1具体提案。",
       "code_target": 8500,
       "tasks": [
         {
@@ -110,7 +110,7 @@ window.FLUXFORGE_DATA = {
           "title": "数据契约与实际浏览接线",
           "weight": 20,
           "progress": 65,
-          "note": "候选缓存/协议与PR70 Compiler接线已接收；本轮I00反馈和前端真实接入仍待。",
+          "note": "PR70浏览接线、PR75组合验证及PR79 I00回应/跨层测试已接收；真实GUI导入仍待。",
           "issue": 19
         },
         {
@@ -126,7 +126,7 @@ window.FLUXFORGE_DATA = {
           "title": "Compiler 与目标部署",
           "weight": 15,
           "progress": 60,
-          "note": "已有技术 worker；仅 Runtime 干净目标机验收仍待。",
+          "note": "PR77局部启动优化接收、目标机A组六项通过；B/C、Runtime-only独立证明和最终安装仍待。",
           "issue": 21
         },
         {
@@ -134,7 +134,7 @@ window.FLUXFORGE_DATA = {
           "title": "进程桥、故障恢复与交接",
           "weight": 20,
           "progress": 60,
-          "note": "桥与回传工具阶段接收；实际 UI 接线及目标场景仍待。",
+          "note": "typed桥和诊断阶段接收；历史超时/耗时波动、真实UI任务接线仍待。",
           "issue": 22
         },
         {
@@ -147,12 +147,12 @@ window.FLUXFORGE_DATA = {
         }
       ],
       "progress": 60,
-      "code_lines": 5057,
-      "code_progress": 59,
-      "last_submitted_at": "2026-10-26T10:09:34Z",
-      "last_updated_at": "2026-10-26T11:35:03Z",
-      "pr_count": 12,
-      "open_count": 2
+      "code_lines": 5073,
+      "code_progress": 60,
+      "last_submitted_at": "2026-10-26T13:55:06Z",
+      "last_updated_at": "2026-10-26T16:46:11Z",
+      "pr_count": 13,
+      "open_count": 0
     },
     {
       "login": "Viper-Boss",
@@ -212,29 +212,89 @@ window.FLUXFORGE_DATA = {
       "progress": 35,
       "code_lines": null,
       "code_progress": null,
-      "last_submitted_at": "2026-10-26T05:21:00Z",
-      "last_updated_at": "2026-10-26T05:21:39Z",
-      "pr_count": 27,
+      "last_submitted_at": "2026-10-26T16:45:48Z",
+      "last_updated_at": "2026-10-26T16:46:07Z",
+      "pr_count": 29,
       "open_count": 0
     }
   ],
   "pull_requests": [
     {
+      "number": 80,
+      "author": "Viper-Boss",
+      "title": "docs: 归档 PR74–79 本人接收决定并同步协作看板",
+      "created_at": "2026-10-26T16:45:48Z",
+      "updated_at": "2026-10-26T16:46:07Z",
+      "merged_at": "2026-10-26T16:46:07Z",
+      "closed_at": "2026-10-26T16:46:07Z",
+      "state": "merged",
+      "draft": false,
+      "head": "d4577e949d5e9c2207f0f8ea21a68c1cc0c14944",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/80",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
+      "number": 79,
+      "author": "yh1030",
+      "title": "test(B02-I00): validate merged frontend/backend browsing handoff",
+      "created_at": "2026-10-26T13:55:06Z",
+      "updated_at": "2026-10-26T16:46:11Z",
+      "merged_at": "2026-10-26T16:42:35Z",
+      "closed_at": "2026-10-26T16:42:36Z",
+      "state": "merged",
+      "draft": false,
+      "head": "bf737d78a97311fa045bbd3509a967abed09e72f",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/79",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B02-I00交接回应与跨层组合验证",
+        "summary": "2026-10-27本人要求待审通过，已合并。测试和报告范围接收；真实GUI导入/保存/任务生命周期、DPI及物理验收仍待。",
+        "reviewed_date": "2026-10-27",
+        "report": "docs/development/reviews/2026-10-27_V01_PR79_acceptance.md"
+      }
+    },
+    {
+      "number": 78,
+      "author": "Viper-Boss",
+      "title": "docs: 归档 B04 目标虚拟机六项启动与缓存复测结果",
+      "created_at": "2026-10-26T12:25:35Z",
+      "updated_at": "2026-10-26T12:26:04Z",
+      "merged_at": "2026-10-26T12:26:04Z",
+      "closed_at": "2026-10-26T12:26:04Z",
+      "state": "merged",
+      "draft": false,
+      "head": "dd594964abf90155c1078c2c521ed0da2175443e",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/78",
+      "review": {
+        "state": "record",
+        "label": "指挥记录已归档",
+        "summary": "这条为已合并的指挥/文档交付。具体范围见 PR；不代表它提及的业务代码已获批准。"
+      }
+    },
+    {
       "number": 77,
       "author": "yh1030",
       "title": "perf(B04): reduce strict catalog parsing and trace startup boundaries",
       "created_at": "2026-10-26T10:09:34Z",
-      "updated_at": "2026-10-26T11:35:03Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-10-26T13:25:35Z",
+      "merged_at": "2026-10-26T13:25:35Z",
+      "closed_at": "2026-10-26T13:25:35Z",
+      "state": "merged",
       "draft": false,
-      "head": "3022a08231a48fe7521467372733f738829fb58b",
+      "head": "9340fdedbf71902f238f4bda4fb8f80f93e7f850",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/77",
       "review": {
-        "state": "pending",
-        "label": "待审核",
-        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B04 严格解析优化与启动诊断",
+        "summary": "2026-10-26 本人明确“审核全部通过”，已合并。局部优化与诊断本批接收；目标机A组六项通过，耗时波动、历史超时、B/C及Runtime-only最终证明仍待。",
+        "reviewed_date": "2026-10-26",
+        "report": "docs/development/reviews/2026-10-26_V01_PR74_PR77_batch-acceptance.md"
       }
     },
     {
@@ -242,17 +302,20 @@ window.FLUXFORGE_DATA = {
       "author": "fungi1220",
       "title": "F02-R1：B02 缓存驱动波形、热图与可确认 ROI",
       "created_at": "2026-10-26T06:30:39Z",
-      "updated_at": "2026-10-26T07:32:11Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
-      "draft": true,
-      "head": "31f5c6d03af2edf2c0b5319ec1e7456036b59f23",
+      "updated_at": "2026-10-26T16:46:14Z",
+      "merged_at": "2026-10-26T13:25:30Z",
+      "closed_at": "2026-10-26T13:25:30Z",
+      "state": "merged",
+      "draft": false,
+      "head": "cb3a99d9ca16f521898320ce3b48f094de765f3b",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/76",
       "review": {
-        "state": "pending",
-        "label": "待审核 · 草稿",
-        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "F02-R1 缓存样例、波形热图与ROI",
+        "summary": "2026-10-26 本人明确“审核全部通过”，已合并。缓存fixture浏览/ROI及取消恢复本批接收；真实MAT导入、持久化、大矩阵性能、系统DPI及双方交接继续。",
+        "reviewed_date": "2026-10-26",
+        "report": "docs/development/reviews/2026-10-26_V01_PR74_PR77_batch-acceptance.md"
       }
     },
     {
@@ -260,17 +323,20 @@ window.FLUXFORGE_DATA = {
       "author": "yh1030",
       "title": "test(B02-W1): verify merged main and retain cold startup timeout",
       "created_at": "2026-10-26T05:47:18Z",
-      "updated_at": "2026-10-26T05:49:02Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-10-26T13:25:24Z",
+      "merged_at": "2026-10-26T13:25:24Z",
+      "closed_at": "2026-10-26T13:25:24Z",
+      "state": "merged",
       "draft": false,
       "head": "a605fd2fb2f4f76c6d81b28b69d237104a3d214d",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/75",
       "review": {
-        "state": "pending",
-        "label": "待审核",
-        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B02-W1 合并后组合验证记录",
+        "summary": "2026-10-26 本人明确“审核全部通过”，已合并。开发者组合验证与真实失败记录接收；120185ms与旧120138ms根因仍未确认。",
+        "reviewed_date": "2026-10-26",
+        "report": "docs/development/reviews/2026-10-26_V01_PR74_PR77_batch-acceptance.md"
       }
     },
     {
@@ -278,17 +344,20 @@ window.FLUXFORGE_DATA = {
       "author": "fungi1220",
       "title": "F01：修复原因菜单抢焦点并补交原生截图证据",
       "created_at": "2026-10-26T05:38:13Z",
-      "updated_at": "2026-10-26T05:45:02Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
-      "draft": true,
+      "updated_at": "2026-10-26T13:25:18Z",
+      "merged_at": "2026-10-26T13:25:18Z",
+      "closed_at": "2026-10-26T13:25:18Z",
+      "state": "merged",
+      "draft": false,
       "head": "e3c35ded776fdb1fb7042b41903f0f9f75bb2513",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/74",
       "review": {
-        "state": "pending",
-        "label": "待审核 · 草稿",
-        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "F01 菜单焦点修复与证据勘误",
+        "summary": "2026-10-26 本人明确“审核全部通过”，已合并。菜单外部关闭焦点修复及新原生证据本批接收，系统DPI和完整交互补验继续。",
+        "reviewed_date": "2026-10-26",
+        "report": "docs/development/reviews/2026-10-26_V01_PR74_PR77_batch-acceptance.md"
       }
     },
     {
