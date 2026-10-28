@@ -1,8 +1,8 @@
 window.FLUXFORGE_DATA = {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-26T16:46:38Z",
-  "main_sha": "9923353851ab90bdd6cafe1a5a51f48cf67cae68",
+  "generated_at": "2026-10-28T18:00:06Z",
+  "main_sha": "8dca9ae90e3ab8daf6e2dd1dffd307a6ddbde58b",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；2026-10-26本批接收后F02-R1子项粗估70，其余子项不按合并数自动增加。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
   "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
@@ -11,9 +11,9 @@ window.FLUXFORGE_DATA = {
   "code_target": 16500,
   "code_progress": 46,
   "review_documents": 64,
-  "open_count": 0,
-  "merged_count": 45,
-  "last_submitted_at": "2026-10-26T16:45:48Z",
+  "open_count": 3,
+  "merged_count": 48,
+  "last_submitted_at": "2026-10-28T13:40:40Z",
   "members": [
     {
       "login": "fungi1220",
@@ -81,10 +81,10 @@ window.FLUXFORGE_DATA = {
       "progress": 40,
       "code_lines": 2515,
       "code_progress": 31,
-      "last_submitted_at": "2026-10-26T06:30:39Z",
-      "last_updated_at": "2026-10-26T16:46:14Z",
-      "pr_count": 4,
-      "open_count": 0
+      "last_submitted_at": "2026-10-28T09:05:15Z",
+      "last_updated_at": "2026-10-28T15:21:26Z",
+      "pr_count": 6,
+      "open_count": 1
     },
     {
       "login": "yh1030",
@@ -149,10 +149,10 @@ window.FLUXFORGE_DATA = {
       "progress": 60,
       "code_lines": 5073,
       "code_progress": 60,
-      "last_submitted_at": "2026-10-26T13:55:06Z",
-      "last_updated_at": "2026-10-26T16:46:11Z",
-      "pr_count": 13,
-      "open_count": 0
+      "last_submitted_at": "2026-10-28T13:40:40Z",
+      "last_updated_at": "2026-10-28T17:58:15Z",
+      "pr_count": 17,
+      "open_count": 2
     },
     {
       "login": "Viper-Boss",
@@ -219,6 +219,114 @@ window.FLUXFORGE_DATA = {
     }
   ],
   "pull_requests": [
+    {
+      "number": 86,
+      "author": "yh1030",
+      "title": "B02: PR85真实导入联调与受信worker交接",
+      "created_at": "2026-10-28T13:40:40Z",
+      "updated_at": "2026-10-28T14:34:24Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "15f7ff5b346f7f5a9f7bec7323480f5ae95263d3",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/86",
+      "review": {
+        "state": "pending",
+        "label": "待审核",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 85,
+      "author": "fungi1220",
+      "title": "F02-R2: MAT 只读导入向导与 typed worker 前端接线",
+      "created_at": "2026-10-28T09:05:15Z",
+      "updated_at": "2026-10-28T15:21:26Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": true,
+      "head": "d7435693344a6e7f0717f187bc77dcd063ea463d",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/85",
+      "review": {
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 84,
+      "author": "yh1030",
+      "title": "B04: 无人值守客机测试与快照轮次自动调度",
+      "created_at": "2026-10-27T11:01:00Z",
+      "updated_at": "2026-10-28T14:53:27Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "1511821b7933caa758ce75551d1eccf70e9dc549",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/84",
+      "review": {
+        "state": "pending",
+        "label": "待审核",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 83,
+      "author": "yh1030",
+      "title": "docs(B03-P1): collect frontend compatibility feedback and design decisions",
+      "created_at": "2026-10-27T10:20:25Z",
+      "updated_at": "2026-10-28T17:58:15Z",
+      "merged_at": "2026-10-28T17:58:15Z",
+      "closed_at": "2026-10-28T17:58:15Z",
+      "state": "merged",
+      "draft": false,
+      "head": "0f0b9b1f42888b569630261a5b272a0e2ca25699",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/83",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 82,
+      "author": "yh1030",
+      "title": "docs(B03-P1): propose strict analysis schemas and source-bound numeric fixtures",
+      "created_at": "2026-10-27T04:52:22Z",
+      "updated_at": "2026-10-27T10:21:41Z",
+      "merged_at": "2026-10-27T06:02:28Z",
+      "closed_at": "2026-10-27T06:02:28Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5fad91f8aaf2c4d16b355e4ecafddf9ef03b2abe",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/82",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
+    {
+      "number": 81,
+      "author": "fungi1220",
+      "title": "F02-R1：补齐14张原图交付回执与合并状态",
+      "created_at": "2026-10-27T01:45:38Z",
+      "updated_at": "2026-10-27T06:02:18Z",
+      "merged_at": "2026-10-27T06:02:17Z",
+      "closed_at": "2026-10-27T06:02:17Z",
+      "state": "merged",
+      "draft": false,
+      "head": "5411416ec6da1d7dd2f9d07d985da5a6482d0996",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/81",
+      "review": {
+        "state": "merged",
+        "label": "已合并 · 详见原记录",
+        "summary": "GitHub 确认已合并；本看板尚未登记更细的审核范围，请查看原 PR 和审核记录。"
+      }
+    },
     {
       "number": 80,
       "author": "Viper-Boss",
@@ -302,7 +410,7 @@ window.FLUXFORGE_DATA = {
       "author": "fungi1220",
       "title": "F02-R1：B02 缓存驱动波形、热图与可确认 ROI",
       "created_at": "2026-10-26T06:30:39Z",
-      "updated_at": "2026-10-26T16:46:14Z",
+      "updated_at": "2026-10-27T01:46:21Z",
       "merged_at": "2026-10-26T13:25:30Z",
       "closed_at": "2026-10-26T13:25:30Z",
       "state": "merged",
