@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-10-28T18:00:06Z",
+  "generated_at": "2026-10-28T18:15:05Z",
   "main_sha": "8dca9ae90e3ab8daf6e2dd1dffd307a6ddbde58b",
   "estimate_date": "2026-10-26",
-  "estimate_note": "工作量为指挥按任务阶段作出的粗估，取整到5%；2026-10-26本批接收后F02-R1子项粗估70，其余子项不按合并数自动增加。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
+  "estimate_note": "工作量为指挥按任务实际覆盖范围作出的粗估，取整到5%；已提交PR按其实际实现覆盖计入，不要求先审核或合并，但不等于验收通过。2026-10-29依据PR85/86/84的代码与任务交付，将F02-R2/B02/B04分别调整为60/75/70；剩余真实GUI接收、目标环境及完整任务项仍待。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
   "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
-  "overall_progress": 50,
+  "overall_progress": 55,
   "code_lines": 7588,
   "code_target": 16500,
   "code_progress": 46,
@@ -46,7 +46,8 @@
           "id": "F02-R2",
           "title": "真实 MAT 导入与诊断",
           "weight": 10,
-          "progress": 0,
+          "progress": 60,
+          "note": "PR85提交MAT导入向导、诊断与typed worker前端接线，按实际覆盖计入；接收方真实GUI联调及完整导入流程仍待。",
           "issue": 13
         },
         {
@@ -78,7 +79,7 @@
           "issue": 17
         }
       ],
-      "progress": 40,
+      "progress": 45,
       "code_lines": 2515,
       "code_progress": 31,
       "last_submitted_at": "2026-10-28T09:05:15Z",
@@ -109,8 +110,8 @@
           "id": "B02",
           "title": "数据契约与实际浏览接线",
           "weight": 20,
-          "progress": 65,
-          "note": "PR70浏览接线、PR75组合验证及PR79 I00回应/跨层测试已接收；真实GUI导入仍待。",
+          "progress": 75,
+          "note": "已接收PR70/75/79；PR86提交PR85真实worker交接及跨层场景，按实际覆盖计入但未验收；接收方下载核SHA与GUI实测仍待。",
           "issue": 19
         },
         {
@@ -125,8 +126,8 @@
           "id": "B04",
           "title": "Compiler 与目标部署",
           "weight": 15,
-          "progress": 60,
-          "note": "PR77局部启动优化接收、目标机A组六项通过；B/C、Runtime-only独立证明和最终安装仍待。",
+          "progress": 70,
+          "note": "已接收PR77及目标机A组证据；PR84提交B/C与Runtime回传自动化、真实Runtime对照和局部修正，按实际覆盖计入但未验收；B/C缺错环境与Runtime-only独立证明仍待。",
           "issue": 21
         },
         {
@@ -146,7 +147,7 @@
           "issue": 23
         }
       ],
-      "progress": 60,
+      "progress": 65,
       "code_lines": 5073,
       "code_progress": 60,
       "last_submitted_at": "2026-10-28T13:40:40Z",
