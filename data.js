@@ -1,19 +1,19 @@
 window.FLUXFORGE_DATA = {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-11-01T15:14:35Z",
-  "main_sha": "0dae5e3f9b6ab1c4830fcd3f89b0355cbf48239f",
+  "generated_at": "2026-11-02T12:30:35Z",
+  "main_sha": "f3140ca1e442add5fd69778d768f307fd068867c",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务实际覆盖范围作出的粗估，取整到5%；已提交PR按其实际实现覆盖计入，不要求先审核或合并，但不等于验收通过。2026-10-29依据PR85/86/84的代码与任务交付，将F02-R2/B02/B04分别调整为60/75/70；剩余真实GUI接收、目标环境及完整任务项仍待。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
   "exclusion_note": "排除GLM/Claude平行实现和独立美学参考提案；不以它们增加主线进度。",
   "overall_progress": 55,
-  "code_lines": 7920,
+  "code_lines": 8971,
   "code_target": 16500,
-  "code_progress": 48,
+  "code_progress": 54,
   "review_documents": 64,
-  "open_count": 6,
-  "merged_count": 56,
-  "last_submitted_at": "2026-11-01T11:44:03Z",
+  "open_count": 2,
+  "merged_count": 63,
+  "last_submitted_at": "2026-11-02T07:13:06Z",
   "members": [
     {
       "login": "fungi1220",
@@ -80,11 +80,11 @@ window.FLUXFORGE_DATA = {
         }
       ],
       "progress": 45,
-      "code_lines": 2847,
-      "code_progress": 36,
-      "last_submitted_at": "2026-11-01T03:31:23Z",
-      "last_updated_at": "2026-11-01T05:20:18Z",
-      "pr_count": 9,
+      "code_lines": 3898,
+      "code_progress": 49,
+      "last_submitted_at": "2026-11-02T03:41:30Z",
+      "last_updated_at": "2026-11-02T05:53:53Z",
+      "pr_count": 10,
       "open_count": 1
     },
     {
@@ -150,10 +150,10 @@ window.FLUXFORGE_DATA = {
       "progress": 65,
       "code_lines": 5073,
       "code_progress": 60,
-      "last_submitted_at": "2026-11-01T11:44:03Z",
-      "last_updated_at": "2026-11-01T11:45:36Z",
-      "pr_count": 25,
-      "open_count": 5
+      "last_submitted_at": "2026-11-02T07:13:06Z",
+      "last_updated_at": "2026-11-02T08:20:01Z",
+      "pr_count": 27,
+      "open_count": 1
     },
     {
       "login": "Viper-Boss",
@@ -221,14 +221,72 @@ window.FLUXFORGE_DATA = {
   ],
   "pull_requests": [
     {
+      "number": 101,
+      "author": "yh1030",
+      "title": "B05：真实GUI异常退出验证与供电中断记录（待完成）",
+      "created_at": "2026-11-02T07:13:06Z",
+      "updated_at": "2026-11-02T08:20:01Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": true,
+      "head": "41187eade38e2748286dfaa168dcee153a4d7247",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/101",
+      "review": {
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 100,
+      "author": "yh1030",
+      "title": "B02/I00：核对PR99项目格式并反馈只读与参数修订边界",
+      "created_at": "2026-11-02T05:40:01Z",
+      "updated_at": "2026-11-02T05:54:01Z",
+      "merged_at": "2026-11-02T05:54:00Z",
+      "closed_at": "2026-11-02T05:54:00Z",
+      "state": "merged",
+      "draft": false,
+      "head": "b4a62526797802d92cb1fc4091a1af9ad69a7d2f",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/100",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B02/I00：核对PR99项目格式并反馈只读与参数修订边界",
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
+      }
+    },
+    {
+      "number": 99,
+      "author": "fungi1220",
+      "title": "F03-R1：独立项目保存、标注持久化及上一版本恢复",
+      "created_at": "2026-11-02T03:41:30Z",
+      "updated_at": "2026-11-02T05:53:53Z",
+      "merged_at": "2026-11-02T05:53:53Z",
+      "closed_at": "2026-11-02T05:53:53Z",
+      "state": "merged",
+      "draft": false,
+      "head": "4ec846b843acf261e156781c9036f2d174f7336e",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/99",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "F03-R1：独立项目保存、标注持久化及上一版本恢复",
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
+      }
+    },
+    {
       "number": 98,
       "author": "yh1030",
       "title": "B01：复用四行输入对照两个原始模型及阈值响应",
       "created_at": "2026-11-01T11:44:03Z",
-      "updated_at": "2026-11-01T11:45:36Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-11-02T05:53:43Z",
+      "merged_at": "2026-11-02T05:53:43Z",
+      "closed_at": "2026-11-02T05:53:43Z",
+      "state": "merged",
       "draft": false,
       "head": "92d609ce90a2ef044a3800fd91139d44c1ea6a60",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/98",
@@ -236,8 +294,8 @@ window.FLUXFORGE_DATA = {
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B01：复用四行输入对照两个原始模型及阈值响应",
-        "summary": "2026-11-01 Viper-Boss明确要求全部通过，登记当前HEAD的本PR交付范围；未完成项继续保留，不扩展为完整任务、物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-01"
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
       }
     },
     {
@@ -245,10 +303,10 @@ window.FLUXFORGE_DATA = {
       "author": "yh1030",
       "title": "B01：对照原两入口并分别归因长/宽阈值与模型交互",
       "created_at": "2026-11-01T10:38:11Z",
-      "updated_at": "2026-11-01T11:22:08Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-11-02T05:53:34Z",
+      "merged_at": "2026-11-02T05:53:34Z",
+      "closed_at": "2026-11-02T05:53:34Z",
+      "state": "merged",
       "draft": false,
       "head": "b8b24dbd5d13ce359b48a7ac74ec2d3c1032b7f7",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/97",
@@ -256,28 +314,28 @@ window.FLUXFORGE_DATA = {
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B01：对照原两入口并分别归因长/宽阈值与模型交互",
-        "summary": "2026-11-01 Viper-Boss明确要求全部通过，登记当前HEAD的本PR交付范围；未完成项继续保留，不扩展为完整任务、物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-01"
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
       }
     },
     {
       "number": 96,
       "author": "yh1030",
-      "title": "docs(B03-T1)：提交准入裁决、阶段审核与B04回传交接",
+      "title": "docs：补齐B03准入、阶段审核、B04与真实案例交接",
       "created_at": "2026-11-01T09:54:19Z",
-      "updated_at": "2026-11-01T09:56:27Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-11-02T05:53:22Z",
+      "merged_at": "2026-11-02T05:53:22Z",
+      "closed_at": "2026-11-02T05:53:22Z",
+      "state": "merged",
       "draft": false,
-      "head": "41d9b3bdeae65e661da8cbb7f2b9a38daf00ee7c",
+      "head": "ab2885b66d9477d080563f3481d9bb9bf266a754",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/96",
       "review": {
         "state": "stage_accepted",
         "label": "本人本批通过",
-        "scope": "docs(B03-T1)：提交准入裁决、阶段审核与B04回传交接",
-        "summary": "2026-11-01 Viper-Boss明确要求全部通过，登记当前HEAD的本PR交付范围；未完成项继续保留，不扩展为完整任务、物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-01"
+        "scope": "docs：补齐B03准入、阶段审核、B04与真实案例交接",
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
       }
     },
     {
@@ -285,10 +343,10 @@ window.FLUXFORGE_DATA = {
       "author": "yh1030",
       "title": "B05：验证并行Compiler的取消与宿主异常退出隔离",
       "created_at": "2026-11-01T04:47:55Z",
-      "updated_at": "2026-11-01T05:28:02Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-11-02T05:53:07Z",
+      "merged_at": "2026-11-02T05:53:07Z",
+      "closed_at": "2026-11-02T05:53:07Z",
+      "state": "merged",
       "draft": false,
       "head": "05b0eab9c43d46b7a18136001538cdc12249f738",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/95",
@@ -296,8 +354,8 @@ window.FLUXFORGE_DATA = {
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B05：验证并行Compiler的取消与宿主异常退出隔离",
-        "summary": "2026-11-01 Viper-Boss明确要求全部通过，登记当前HEAD的本PR交付范围；未完成项继续保留，不扩展为完整任务、物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-01"
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
       }
     },
     {
@@ -305,10 +363,10 @@ window.FLUXFORGE_DATA = {
       "author": "yh1030",
       "title": "B02/I00：核验PR93导入与关闭回传并提交后端反馈",
       "created_at": "2026-11-01T04:24:26Z",
-      "updated_at": "2026-11-01T05:29:04Z",
-      "merged_at": null,
-      "closed_at": null,
-      "state": "open",
+      "updated_at": "2026-11-02T05:52:50Z",
+      "merged_at": "2026-11-02T05:52:50Z",
+      "closed_at": "2026-11-02T05:52:50Z",
+      "state": "merged",
       "draft": false,
       "head": "8533ae3a576924f3a18196672a315c07b412beec",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/94",
@@ -316,8 +374,8 @@ window.FLUXFORGE_DATA = {
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B02/I00：核验PR93导入与关闭回传并提交后端反馈",
-        "summary": "2026-11-01 Viper-Boss明确要求全部通过，登记当前HEAD的本PR交付范围；未完成项继续保留，不扩展为完整任务、物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-01"
+        "summary": "2026-11-02本人明确全部通过（草稿除外）；仅绑定本PR当前HEAD及交付范围，剩余缺项继续保留。",
+        "reviewed_date": "2026-11-02"
       }
     },
     {
@@ -333,11 +391,10 @@ window.FLUXFORGE_DATA = {
       "head": "d30b5ef715da067fd9ae6c3717355d502879bed3",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/93",
       "review": {
-        "state": "stage_accepted",
-        "label": "本人本批通过",
-        "scope": "F02-R2：本人 Runtime、真实 B 导入及取消/失败实机回执",
-        "summary": "2026-11-01 Viper-Boss明确要求全部通过，登记当前HEAD的本PR交付范围；未完成项继续保留，不扩展为完整任务、物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-01"
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "2026-11-02本人明确草稿除外，当前草稿不列入本批通过。历史2026-11-01意见仅作历史记录。",
+        "reviewed_date": "2026-11-02"
       }
     },
     {
