@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-11-02T12:30:35Z",
+  "generated_at": "2026-11-03T16:44:59Z",
   "main_sha": "f3140ca1e442add5fd69778d768f307fd068867c",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务实际覆盖范围作出的粗估，取整到5%；已提交PR按其实际实现覆盖计入，不要求先审核或合并，但不等于验收通过。2026-10-29依据PR85/86/84的代码与任务交付，将F02-R2/B02/B04分别调整为60/75/70；剩余真实GUI接收、目标环境及完整任务项仍待。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
@@ -11,9 +11,9 @@
   "code_target": 16500,
   "code_progress": 54,
   "review_documents": 64,
-  "open_count": 2,
+  "open_count": 7,
   "merged_count": 63,
-  "last_submitted_at": "2026-11-02T07:13:06Z",
+  "last_submitted_at": "2026-11-03T12:21:24Z",
   "members": [
     {
       "login": "fungi1220",
@@ -82,10 +82,10 @@
       "progress": 45,
       "code_lines": 3898,
       "code_progress": 49,
-      "last_submitted_at": "2026-11-02T03:41:30Z",
-      "last_updated_at": "2026-11-02T05:53:53Z",
-      "pr_count": 10,
-      "open_count": 1
+      "last_submitted_at": "2026-11-03T03:45:03Z",
+      "last_updated_at": "2026-11-03T15:06:56Z",
+      "pr_count": 11,
+      "open_count": 2
     },
     {
       "login": "yh1030",
@@ -150,10 +150,10 @@
       "progress": 65,
       "code_lines": 5073,
       "code_progress": 60,
-      "last_submitted_at": "2026-11-02T07:13:06Z",
-      "last_updated_at": "2026-11-02T08:20:01Z",
-      "pr_count": 27,
-      "open_count": 1
+      "last_submitted_at": "2026-11-03T12:21:24Z",
+      "last_updated_at": "2026-11-03T12:23:01Z",
+      "pr_count": 31,
+      "open_count": 5
     },
     {
       "login": "Viper-Boss",
@@ -221,21 +221,121 @@
   ],
   "pull_requests": [
     {
-      "number": 101,
+      "number": 106,
       "author": "yh1030",
-      "title": "B05：真实GUI异常退出验证与供电中断记录（待完成）",
-      "created_at": "2026-11-02T07:13:06Z",
-      "updated_at": "2026-11-02T08:20:01Z",
+      "title": "B05：增加可取消文件校验并接入启动前检查",
+      "created_at": "2026-11-03T12:21:24Z",
+      "updated_at": "2026-11-03T12:23:01Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "edabf9c8c35eba06f1d96a988db705982eef2c03",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/106",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B05：增加可取消文件校验并接入启动前检查",
+        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
+        "reviewed_date": "2026-11-04"
+      }
+    },
+    {
+      "number": 105,
+      "author": "yh1030",
+      "title": "B05：验证真实GUI切源后的成功旧结果拒收",
+      "created_at": "2026-11-03T08:29:42Z",
+      "updated_at": "2026-11-03T08:31:54Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "bc9584f8180db684cadc9678b95707a1a344d42f",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/105",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B05：验证真实GUI切源后的成功旧结果拒收",
+        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
+        "reviewed_date": "2026-11-04"
+      }
+    },
+    {
+      "number": 104,
+      "author": "yh1030",
+      "title": "B02/I00：复核PR103只读与参数修订修复并交接",
+      "created_at": "2026-11-03T07:50:54Z",
+      "updated_at": "2026-11-03T09:42:15Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "809cceec263c30a429a6851c75570e765de00c54",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/104",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B02/I00：复核PR103只读与参数修订修复并交接",
+        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
+        "reviewed_date": "2026-11-04"
+      }
+    },
+    {
+      "number": 103,
+      "author": "fungi1220",
+      "title": "F03-R2：只读保护、参数修订与版本摘要",
+      "created_at": "2026-11-03T03:45:03Z",
+      "updated_at": "2026-11-03T15:06:56Z",
       "merged_at": null,
       "closed_at": null,
       "state": "open",
       "draft": true,
-      "head": "41187eade38e2748286dfaa168dcee153a4d7247",
-      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/101",
+      "head": "0f9d2ed74373f4b12fb198f7b21547e399fcf810",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/103",
       "review": {
         "state": "pending",
         "label": "待审核 · 草稿",
         "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 102,
+      "author": "yh1030",
+      "title": "B02/I00：验证真实B项目保存、关闭与新进程重开",
+      "created_at": "2026-11-02T14:21:08Z",
+      "updated_at": "2026-11-02T14:23:02Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "8111596c423951078f4a611e71511b74c1f7b052",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/102",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B02/I00：验证真实B项目保存、关闭与新进程重开",
+        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
+        "reviewed_date": "2026-11-04"
+      }
+    },
+    {
+      "number": 101,
+      "author": "yh1030",
+      "title": "B05：验证真实GUI异常退出、worker清理与原项目重开",
+      "created_at": "2026-11-02T07:13:06Z",
+      "updated_at": "2026-11-02T13:10:37Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "56d61142a51ddab48e36a8098f6b1cf4966d455c",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/101",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B05：验证真实GUI异常退出、worker清理与原项目重开",
+        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
+        "reviewed_date": "2026-11-04"
       }
     },
     {
@@ -383,7 +483,7 @@
       "author": "fungi1220",
       "title": "F02-R2：本人 Runtime、真实 B 导入及取消/失败实机回执",
       "created_at": "2026-11-01T03:31:23Z",
-      "updated_at": "2026-11-01T05:20:18Z",
+      "updated_at": "2026-11-03T08:30:37Z",
       "merged_at": null,
       "closed_at": null,
       "state": "open",
