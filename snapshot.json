@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "Viper-Boss/fluxforge-mfl",
-  "generated_at": "2026-11-03T16:44:59Z",
+  "generated_at": "2026-11-09T13:02:00Z",
   "main_sha": "f3140ca1e442add5fd69778d768f307fd068867c",
   "estimate_date": "2026-10-26",
   "estimate_note": "工作量为指挥按任务实际覆盖范围作出的粗估，取整到5%；已提交PR按其实际实现覆盖计入，不要求先审核或合并，但不等于验收通过。2026-10-29依据PR85/86/84的代码与任务交付，将F02-R2/B02/B04分别调整为60/75/70；剩余真实GUI接收、目标环境及完整任务项仍待。代码量为main指定产品非空行/预估规模，均非验收率或实测工时。",
@@ -11,9 +11,9 @@
   "code_target": 16500,
   "code_progress": 54,
   "review_documents": 64,
-  "open_count": 7,
+  "open_count": 9,
   "merged_count": 63,
-  "last_submitted_at": "2026-11-03T12:21:24Z",
+  "last_submitted_at": "2026-11-05T10:26:17Z",
   "members": [
     {
       "login": "fungi1220",
@@ -83,7 +83,7 @@
       "code_lines": 3898,
       "code_progress": 49,
       "last_submitted_at": "2026-11-03T03:45:03Z",
-      "last_updated_at": "2026-11-03T15:06:56Z",
+      "last_updated_at": "2026-11-05T10:36:15Z",
       "pr_count": 11,
       "open_count": 2
     },
@@ -150,10 +150,10 @@
       "progress": 65,
       "code_lines": 5073,
       "code_progress": 60,
-      "last_submitted_at": "2026-11-03T12:21:24Z",
-      "last_updated_at": "2026-11-03T12:23:01Z",
-      "pr_count": 31,
-      "open_count": 5
+      "last_submitted_at": "2026-11-05T10:26:17Z",
+      "last_updated_at": "2026-11-07T13:21:19Z",
+      "pr_count": 33,
+      "open_count": 7
     },
     {
       "login": "Viper-Boss",
@@ -221,23 +221,61 @@
   ],
   "pull_requests": [
     {
-      "number": 106,
+      "number": 108,
       "author": "yh1030",
-      "title": "B05：增加可取消文件校验并接入启动前检查",
-      "created_at": "2026-11-03T12:21:24Z",
-      "updated_at": "2026-11-03T12:23:01Z",
+      "title": "[F03-UI-FOCUS-001] winit Windows 对话框焦点修复候选",
+      "created_at": "2026-11-05T10:26:17Z",
+      "updated_at": "2026-11-07T13:21:19Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": true,
+      "head": "509d1674d7126e2a0f70b344bc933d150117f35e",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/108",
+      "review": {
+        "state": "pending",
+        "label": "待审核 · 草稿",
+        "summary": "尚无绑定当前 HEAD 的已登记指挥审核结论。开发者自测或 CI 状态不代替审核。"
+      }
+    },
+    {
+      "number": 107,
+      "author": "yh1030",
+      "title": "B04/B05：保留新超时现场并观察启动阶段、进程与缓存",
+      "created_at": "2026-11-04T05:32:02Z",
+      "updated_at": "2026-11-04T05:33:20Z",
       "merged_at": null,
       "closed_at": null,
       "state": "open",
       "draft": false,
-      "head": "edabf9c8c35eba06f1d96a988db705982eef2c03",
+      "head": "02f0fabba593cbc3fc32d344d8bf4466d61400e2",
+      "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/107",
+      "review": {
+        "state": "stage_accepted",
+        "label": "本人本批通过",
+        "scope": "B04/B05：保留新超时现场并观察启动阶段、进程与缓存",
+        "summary": "2026-11-09 Viper-Boss明确全部通过（草稿除外）；仅绑定当前HEAD及本PR交付范围，保留未完成项，不扩展为物理定义、完整任务或正式发布批准。",
+        "reviewed_date": "2026-11-09"
+      }
+    },
+    {
+      "number": 106,
+      "author": "yh1030",
+      "title": "B05：支持启动前与结果完整校验的合作式取消",
+      "created_at": "2026-11-03T12:21:24Z",
+      "updated_at": "2026-11-04T05:07:18Z",
+      "merged_at": null,
+      "closed_at": null,
+      "state": "open",
+      "draft": false,
+      "head": "44b786d08025a51750e758e2517052c59b96db65",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/106",
       "review": {
         "state": "stage_accepted",
         "label": "本人本批通过",
-        "scope": "B05：增加可取消文件校验并接入启动前检查",
-        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-04"
+        "scope": "B05：支持启动前与结果完整校验的合作式取消",
+        "summary": "2026-11-09 Viper-Boss明确全部通过（草稿除外）；仅绑定当前HEAD及本PR交付范围，保留未完成项，不扩展为物理定义、完整任务或正式发布批准。",
+        "reviewed_date": "2026-11-09"
       }
     },
     {
@@ -256,41 +294,41 @@
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B05：验证真实GUI切源后的成功旧结果拒收",
-        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-04"
+        "summary": "2026-11-09 Viper-Boss明确全部通过（草稿除外）；仅绑定当前HEAD及本PR交付范围，保留未完成项，不扩展为物理定义、完整任务或正式发布批准。",
+        "reviewed_date": "2026-11-09"
       }
     },
     {
       "number": 104,
       "author": "yh1030",
-      "title": "B02/I00：复核PR103只读与参数修订修复并交接",
+      "title": "B02/I00：复核PR103只读、参数摘要与保存证据并反馈缺项",
       "created_at": "2026-11-03T07:50:54Z",
-      "updated_at": "2026-11-03T09:42:15Z",
+      "updated_at": "2026-11-06T14:08:58Z",
       "merged_at": null,
       "closed_at": null,
       "state": "open",
       "draft": false,
-      "head": "809cceec263c30a429a6851c75570e765de00c54",
+      "head": "1d48fefea204809cafefbac7c1cf83b2b9cd7398",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/104",
       "review": {
         "state": "stage_accepted",
         "label": "本人本批通过",
-        "scope": "B02/I00：复核PR103只读与参数修订修复并交接",
-        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-04"
+        "scope": "B02/I00：复核PR103只读、参数摘要与保存证据并反馈缺项",
+        "summary": "2026-11-09 Viper-Boss明确全部通过（草稿除外）；仅绑定当前HEAD及本PR交付范围，保留未完成项，不扩展为物理定义、完整任务或正式发布批准。",
+        "reviewed_date": "2026-11-09"
       }
     },
     {
       "number": 103,
       "author": "fungi1220",
-      "title": "F03-R2：只读保护、参数修订与版本摘要",
+      "title": "F03-R2：保护只读标注与参数修订，明确项目保存状态",
       "created_at": "2026-11-03T03:45:03Z",
-      "updated_at": "2026-11-03T15:06:56Z",
+      "updated_at": "2026-11-05T10:36:15Z",
       "merged_at": null,
       "closed_at": null,
       "state": "open",
       "draft": true,
-      "head": "0f9d2ed74373f4b12fb198f7b21547e399fcf810",
+      "head": "d7b0f7ae5cb1d8d33a631c95ec6bc588b8beb435",
       "url": "https://github.com/Viper-Boss/fluxforge-mfl/pull/103",
       "review": {
         "state": "pending",
@@ -314,8 +352,8 @@
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B02/I00：验证真实B项目保存、关闭与新进程重开",
-        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-04"
+        "summary": "2026-11-09 Viper-Boss明确全部通过（草稿除外）；仅绑定当前HEAD及本PR交付范围，保留未完成项，不扩展为物理定义、完整任务或正式发布批准。",
+        "reviewed_date": "2026-11-09"
       }
     },
     {
@@ -334,8 +372,8 @@
         "state": "stage_accepted",
         "label": "本人本批通过",
         "scope": "B05：验证真实GUI异常退出、worker清理与原项目重开",
-        "summary": "2026-11-04 Viper-Boss明确全部通过（草稿除外）；绑定当前HEAD和本PR交付范围，未完成项继续保留，不扩展为物理定义或正式发布批准。",
-        "reviewed_date": "2026-11-04"
+        "summary": "2026-11-09 Viper-Boss明确全部通过（草稿除外）；仅绑定当前HEAD及本PR交付范围，保留未完成项，不扩展为物理定义、完整任务或正式发布批准。",
+        "reviewed_date": "2026-11-09"
       }
     },
     {
